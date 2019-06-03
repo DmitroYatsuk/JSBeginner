@@ -11,7 +11,7 @@ for (var i = 0; i < 15; i++) {
         document.getElementById("result").innerHTML += "Выпал дубль. Число " + first + " <br>";
     }
     else if (first < 3 && second > 4){
-        document.getElementById("result").innerHTML += "Большой разброс между костями. Разница составляет: " + (second - first) + "<br>";
+        document.getElementById("result").innerHTML += "Большой разброс между костями. Разница составляет: " + Math.abs(second - first) + "<br>";
     }
 
     total += first + second;
